@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+section {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    -moz-overflow: hidden;
+}
+/* 
+body {
+    overflow: auto;
+    scrollbar-width: none;
+    overflow: hidden;
+} */
+
+body::-webkit-scrollbar {
+    display: none;
+}

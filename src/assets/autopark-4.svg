@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="Group_296" data-name="Group 296" transform="translate(-773 -3121)">
+    <path id="Path_11081" data-name="Path 11081" d="M38,1A37,37,0,1,0,75,38,37.041,37.041,0,0,0,38,1Zm0,71.613A34.613,34.613,0,1,1,72.613,38,34.653,34.653,0,0,1,38,72.613Z" transform="translate(772 3120)" fill="#fe6309"/>
+    <g id="Group_269" data-name="Group 269" transform="translate(808.779 3127.098)">
+      <path id="Path_11072" data-name="Path 11072" d="M241,60.036h2.443v5.815H241Z" transform="translate(-241 -60.036)" fill="#fe6309"/>
+    </g>
+    <g id="Group_273" data-name="Group 273" transform="translate(808.779 3183.088)">
+      <path id="Path_11076" data-name="Path 11076" d="M241,411.932h2.443v5.815H241Z" transform="translate(-241 -411.932)" fill="#fe6309"/>
+    </g>
+    <g id="Group_278" data-name="Group 278" transform="translate(788.989 3180.738) rotate(-135)">
+      <path id="Path_11072-2" data-name="Path 11072" d="M0,0H2.443V5.815H0Z" transform="translate(0 0)" fill="#fe6309"/>
+    </g>
+    <g id="Group_279" data-name="Group 279" transform="translate(828.626 3141.101) rotate(-135)">
+      <path id="Path_11076-2" data-name="Path 11076" d="M0,0H2.443V5.815H0Z" transform="translate(0 0)" fill="#fe6309"/>
+    </g>
+    <g id="Group_282" data-name="Group 282" transform="translate(831.117 3180.844) rotate(-135)">
+      <g id="Group_278-2" data-name="Group 278" transform="translate(0 2.443) rotate(-90)">
+        <path id="Path_11072-3" data-name="Path 11072" d="M0,0H2.443V5.815H0Z" transform="translate(0 0)" fill="#fe6309"/>
+      </g>
+      <g id="Group_279-2" data-name="Group 279" transform="translate(56.357 2.443) rotate(-90)">
+        <path id="Path_11076-3" data-name="Path 11076" d="M0,0H2.443V5.815H0Z" transform="translate(0 0)" fill="#fe6309"/>
+      </g>
+    </g>
+    <text id="_1_h_" data-name="1 h/₴" transform="translate(786.831 3163.818)" fill="#fe6309" font-size="17" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">1 h/₴</tspan></text>
+  </g>
+</svg>
