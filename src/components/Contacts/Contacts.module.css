@@ -144,3 +144,71 @@ input {
     height: 30px;
     width: auto;
 }
+
+@media screen and (max-width: 900px) {
+    #contacts {
+        padding: 80px 0;
+    }
+
+    #contacts .wrapper .content {
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: column;
+    }
+
+    #contacts .wrapper .socials {
+        margin-top: 100px;
+    }
+
+    #contacts .wrapper .content .col:nth-child(1) {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #contacts h1 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #contacts form {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    #contacts form input[type='text'] {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 30px;
+        padding: 10px 25px;
+        text-align: center;
+    }
+
+    #contacts form button {
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 25px;
+    }
+
+    #contacts form button {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #contacts .wrapper .content .col:nth-child(2) {
+        width: 100%;
+        align-items: center;
+    }
+
+    #contacts p {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 40px 0;
+    }
+}
