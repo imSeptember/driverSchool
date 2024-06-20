@@ -6,7 +6,8 @@ export default function Packages() {
             <div className={classes.wrapper}>
                 <div className={classes.content}>
                     <h1>
-                        Пакети курсу <span>"Повсякденне водіння"</span>
+                        Пакети курсу{' '}
+                        <span>&quot;Повсякденне водіння&quot;</span>
                     </h1>
                     <div className={classes.packagesRow}>
                         <div className={classes.packagesItem}>
