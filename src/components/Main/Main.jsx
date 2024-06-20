@@ -1,5 +1,5 @@
 import classes from './Main.module.css';
-import mainImage from 'src/assets/main.png';
+import mainImage from './src/assets/main.png';
 
 export default function Main() {
     return (
