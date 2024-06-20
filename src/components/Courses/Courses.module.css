@@ -141,3 +141,55 @@
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
 }
+
+@media screen and (max-width: 900px) {
+    #packages {
+        padding: 110px 0;
+    }
+    #packages h1 {
+        margin-bottom: 0;
+    }
+    #packages .wrapper .content .packagesRow {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #packages .wrapper .content .packagesRow .packagesItem {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    #packages h3 {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 9px 20px;
+        border-radius: 7px;
+    }
+
+    #packages p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 50px;
+    }
+
+    #packages h4 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 19px 50px;
+        border-radius: 50px;
+    }
+}
