@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('./src/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./src/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('./src/fonts/montserrat/Montserrat-SemiBold.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#priceList {
+    padding: 70px 0;
+    background: #fe6309;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col:nth-child(1) {
+    width: 50%;
+}
+
+.col:nth-child(2) {
+    width: 40%;
+}
+
+.list__item {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #292a2c;
+}
+
+#priceList h2 {
+    font-size: 14px;
+    padding: 20px 15px;
+    color: #292a2c;
+    font-family: Montserrat-Regular;
+}
+
+h2 span {
+    font-family: Montserrat-SemiBold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.pushTop {
+    margin-top: auto;
+}
+
+.btn {
+    margin-top: 50px;
+}
+
+.btn {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 17px 42px;
+    border-radius: 50px;
+    border: 1px solid #fe6309;
+    font-family: GilroyBold;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.btnDark {
+    color: #ffffff;
+    background: #292a2c;
+}
+
+#priceList h1 {
+    font-size: 19px;
+    line-height: 22px;
+    color: #292a2c;
+    font-family: Montserrat-SemiBold;
+    text-align: center;
+}
+
+#priceList h1 span {
+    color: #ffffff;
+}
+
+#priceList h3 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #292a2c;
+    font-family: Montserrat-Regular;
+    text-align: center;
+}

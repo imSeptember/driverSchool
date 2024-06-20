@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('./src/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyRegular';
+    src: url('./src/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#contacts {
+    padding: 100px 0;
+    background-image: url(/src/assets/texture.png);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+}
+
+.col:nth-child(1) {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.col:nth-child(2) {
+    width: 30%;
+    align-items: center;
+}
+
+#contacts h1 {
+    font-size: 47px;
+    line-height: 57px;
+    color: #ffffff;
+    font-family: Montserrat-ExtraBold;
+    text-transform: uppercase;
+}
+
+.pushTop {
+    margin-top: auto;
+}
+
+#contacts form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#contacts form input[type='text'] {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    width: 100%;
+    color: #ffffff;
+    font-family: GilroyMedium;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.errorMsg {
+    height: 24px;
+    font-size: 20px;
+    margin: 5px 0;
+    font-family: Montserrat-SemiBold;
+    color: #ff0000;
+}
+
+#contacts form button {
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #fe6309;
+    font-family: GilroyBold;
+}
+
+#contacts form button::after {
+    margin-left: 10px;
+    content: url(/src/assets/arrow-o.svg);
+    display: inline-block;
+}
+
+#contacts p {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 30px 0;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: GilroyRegular;
+    text-align: center;
+}
+
+#contacts p a {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 7px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.socials {
+    margin-top: 100px;
+}
+
+.socials a {
+    margin: 0 20px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.socials a img {
+    height: 30px;
+    width: auto;
+}

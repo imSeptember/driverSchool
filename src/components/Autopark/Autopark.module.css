@@ -15,6 +15,9 @@
     background: #292a2c;
     color: #ffffff;
 }
+.pcNone {
+    display: none;
+}
 
 .owlCarousel {
     height: 100% !important;
@@ -220,4 +223,172 @@
 
 .owlNav .arrowL {
     content: url(/src/assets/arrow-circle-w-l.svg);
+}
+
+@media screen and (max-width: 900px) {
+    .page {
+        height: 100% !important;
+        width: 100% !important;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .page::before {
+        content: '';
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        filter: brightness(80%);
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-top: 430px;
+        min-height: 50%; */
+    }
+
+    .page .content {
+        height: auto;
+        width: 95%;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .owlNav {
+        display: none;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row .col {
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .__btn {
+        font-size: 18px;
+        line-height: 20px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        text-transform: none;
+    }
+
+    .__btn svg {
+        margin-top: 7px;
+        width: 60px;
+    }
+
+    #autopark .title {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .bullets {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bullet__row {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    .bullet__item {
+        width: 100%;
+        display: inline-flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .bullet__item img {
+        height: 75px;
+        width: auto;
+        margin-right: 0;
+    }
+    #autopark p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .rowMobile {
+        flex-flow: row-reverse;
+        margin-top: -50px;
+    }
+
+    #autopark h1 {
+        width: 100%;
+        font-size: 40px;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    .pcNone {
+        width: 100%;
+        font-size: 40px;
+        justify-content: center;
+        padding: 40px 0;
+        display: block;
+        /* text-align: center; */
+        font-family: Montserrat-Bold;
+    }
+
+    .owlNav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        top: 100px;
+        left: 0px;
+    }
+    .owlNav button:hover {
+        opacity: 0.6;
+    }
+
+    .owlNav .arrowR {
+        content: url(/src/assets/arrow-w-l.svg);
+    }
+
+    .owlNav .arrowL {
+        content: url(/src/assets/arrow-w-l.svg);
+    }
+
+    #autopark {
+        height: auto;
+        text-align: center;
+    }
 }

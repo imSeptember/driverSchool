@@ -1,0 +1,219 @@
+@keyframes slideInUp {
+    0% {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./src/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./src/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('./src/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #292a2c;
+    z-index: 10000;
+    text-align: center;
+    visibility: hidden; /* Start with hidden visibility */
+    animation: slideInUp 0.3s forwards; /* Apply the animation */
+}
+
+.close {
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+}
+
+.popup .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.close svg,
+.close img {
+    height: 100%;
+    width: auto;
+}
+
+.popup .wrapper {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.popup .wrapper .content {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.popup h1 {
+    color: #ffffff;
+    font-family: Montserrat-Bold;
+}
+
+.popup form {
+    width: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 115px;
+}
+
+.popup h2 {
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.popup form input[type='text'] {
+    width: 100%;
+    color: #ffffff;
+    font-family: GilroyMedium;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.popup form button {
+    color: #fe6309;
+    font-family: GilroyBold;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.popup form button::after {
+    margin-left: 10px;
+    content: url(/src/assets/arrow-o.svg);
+    display: inline-block;
+}
+
+.popup h1 span {
+    color: #fe6309;
+    text-transform: uppercase;
+}
+
+.errorMsg {
+    color: #ff0000;
+    font-family: Montserrat-SemiBold;
+}
+
+@media screen and (max-width: 1601px) {
+    .errorMsg {
+        height: 24px;
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    .popup h1 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    .popup form {
+        width: 450px;
+        margin-bottom: 40px;
+    }
+
+    .popup form button {
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 25px;
+    }
+
+    .popup h2 {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 24px;
+    }
+    .socials a {
+        margin: 0 20px;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+    .socials a img {
+        height: 30px;
+        width: auto;
+    }
+
+    .popup form input[type='text'] {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        padding: 10px 25px;
+    }
+
+    .popup form button {
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 25px;
+    }
+}

@@ -5,6 +5,19 @@
     border: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 section {
     width: 100%;
     display: block;

@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('./src/fonts/montserrat/Montserrat-ExtraBold.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('./src/fonts/montserrat/Montserrat-SemiBold.ttf')
+        format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('./src/fonts/montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('./src/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyExtraBold';
+    src: url('./src/fonts/Gilroy/Gilroy-Extra-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#packages {
+    padding: 65px 0;
+    background-image: url(/src/assets/texture.png);
+    text-align: center;
+}
+
+#packages h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: Montserrat-ExtraBold;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.packagesRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.packagesItem {
+    width: 20%;
+    height: auto;
+    width: 20%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#packages h4 {
+    color: #fe6309;
+    font-family: Montserrat-ExtraBoldItalic;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+#packages h3 {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 9px 20px;
+    border-radius: 7px;
+    color: #000000;
+    font-family: Montserrat-SemiBold;
+    background: #ffffff;
+}
+
+#packages h3 span {
+    color: #ff2121;
+}
+
+#packages p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: Montserrat-Light;
+}
+
+#packages p span {
+    color: #fe6309;
+}
+
+.pushTop {
+    margin-top: auto;
+}
+
+#packages .btn {
+    margin-top: 50px;
+}
+
+.btn {
+    color: #000000;
+    font-family: GilroyBold;
+    font-size: 16px;
+    line-height: 19px;
+    background: #fe6309;
+    border: 1px solid #fe6309;
+    padding: 17px 42px;
+    border-radius: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}

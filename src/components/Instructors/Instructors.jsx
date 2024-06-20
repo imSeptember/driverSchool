@@ -1,14 +1,14 @@
-import classes from './Autopark.module.css';
-import './Autopark.module.css';
+import classes from './Instructors.module.css';
+import './Instructors.module.css';
 import { useState } from 'react';
-import { arrayWithNames } from '../../data/data';
+import { arrayWithDrivers, paragraphs } from '../../data/data';
 
-export default function Autopark() {
+export default function Instructors() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleClickNext = () => {
         setCurrentIndex((prevIndex) => {
-            if (prevIndex + 1 === arrayWithNames.length) {
+            if (prevIndex + 1 === arrayWithDrivers.length) {
                 return 0;
             } else {
                 return prevIndex + 1;
@@ -19,7 +19,7 @@ export default function Autopark() {
     const handleClickPrev = () => {
         setCurrentIndex((prevIndex) => {
             if (prevIndex === 0) {
-                return arrayWithNames.length - 1;
+                return arrayWithDrivers.length - 1;
             } else {
                 return prevIndex - 1;
             }
@@ -30,75 +30,41 @@ export default function Autopark() {
 
     return (
         <section id={classes.autopark}>
-            <h1 className={classes.pcNone}>Наш автопарк</h1>
             <div className={classes.owlCarousel}>
                 <div className={classes.owlItem}>
                     <div className={currentClass}>
                         <div className={classes.content}>
                             <div className={classes.row}>
                                 <div className={classes.col}>
-                                    <h1 className={classes.pc}>Наш автопарк</h1>
-                                    <div className={classes.bullets}>
-                                        <div className={classes.bullet__row}>
-                                            <div
-                                                className={classes.bullet__item}
-                                            >
-                                                <img src="src/assets/autopark-1.svg" />
-                                                <p>
-                                                    Заняття з нами -<br />
-                                                    <span>
-                                                        максимальна
-                                                        продуктивність
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <div
-                                                className={classes.bullet__item}
-                                            >
-                                                <img src="src/assets/autopark-2.svg" />
-                                                <p>
-                                                    Мінімальна тривалість <br />
-                                                    заняття
-                                                    <span> 2 години</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className={classes.bullet__row}>
-                                            <div
-                                                className={classes.bullet__item}
-                                            >
-                                                <img src="src/assets/autopark-3.svg" />
-                                                <p>
-                                                    Тривалість максимально
-                                                    продуктивного заняття
-                                                    <br />
-                                                    <span>2 години</span>
-                                                </p>
-                                            </div>
-                                            <div
-                                                className={classes.bullet__item}
-                                            >
-                                                <img src="src/assets/autopark-4.svg" />
-                                                <p>
-                                                    1 година АКПП =
-                                                    <span>
-                                                        1100 / 1300 / 1500 грн
-                                                    </span>
-                                                    <br />1 година МКПП =
-                                                    <span> 850 грн</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h1 className={classes.pc}>
+                                        Наші інструктори
+                                    </h1>
                                 </div>
                             </div>
 
-                            <div
-                                className={`${classes.row} ${classes.rowMobile}`}
-                            >
+                            <div className={classes.row}>
+                                <div className={classes.col}>
+                                    <div className={classes.title}>
+                                        {arrayWithDrivers[currentIndex]}
+                                    </div>
+                                    {paragraphs.map((text, index) => (
+                                        <p
+                                            key={index}
+                                            style={{
+                                                display:
+                                                    index === currentIndex
+                                                        ? 'block'
+                                                        : 'none',
+                                            }}
+                                            dangerouslySetInnerHTML={{
+                                                __html: text,
+                                            }}
+                                        />
+                                    ))}
+                                </div>
                                 <div className={classes.col}>
                                     <div className={classes.__btn}>
-                                        Забронювати перше заняття
+                                        Хочу до цього інструктора
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="90"
@@ -154,11 +120,6 @@ export default function Autopark() {
                                                 </g>
                                             </g>
                                         </svg>
-                                    </div>
-                                </div>
-                                <div className={classes.col}>
-                                    <div className={classes.title}>
-                                        {arrayWithNames[currentIndex]}
                                     </div>
                                 </div>
                             </div>
