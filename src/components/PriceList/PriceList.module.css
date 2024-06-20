@@ -123,3 +123,69 @@ h2 span {
     font-family: Montserrat-Regular;
     text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+    #priceList {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    #priceList .wrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #priceList .wrapper .content {
+        width: 95%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #priceList .wrapper .content .col:nth-child(1) {
+        width: 95%;
+    }
+
+    #priceList .wrapper .content .col {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    #priceList .wrapper .content .col .list__item {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #priceList h2 {
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    #priceList .wrapper .content .col:nth-child(2) {
+        width: 100%;
+    }
+    #priceList h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    #priceList h3 {
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
+    #priceList .btn {
+        margin-top: 45px;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 19px 50px;
+        border-radius: 50px;
+    }
+}

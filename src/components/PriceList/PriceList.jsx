@@ -20,8 +20,8 @@ export default function PriceList() {
                         </div>
                         <div className={classes.list__item}>
                             <h2>
-                                1 година навчання за курсом "Повсякденне водіння
-                                АКПП"
+                                1 година навчання за курсом &quot;Повсякденне
+                                водіння АКПП&quot;
                             </h2>
                             <h2>
                                 <span>
@@ -34,8 +34,8 @@ export default function PriceList() {
                         </div>
                         <div className={classes.list__item}>
                             <h2>
-                                1 година навчання за курсом "Повсякденне водіння
-                                МКПП"
+                                1 година навчання за курсом &quot;Повсякденне
+                                водіння МКПП&quot;
                             </h2>
                             <h2>
                                 <span>850 ₴ - машина школи</span>
@@ -43,8 +43,8 @@ export default function PriceList() {
                         </div>
                         <div className={classes.list__item}>
                             <h2>
-                                1 година навчання за курсом "Екстремальне
-                                водіння"
+                                1 година навчання за курсом &quot;Екстремальне
+                                водіння&quot;
                             </h2>
                             <h2>
                                 <span>3700 ₴ - машина школи</span>
