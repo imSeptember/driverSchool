@@ -1,5 +1,7 @@
 import classes from './Main.module.css';
 
+import mainImage from '/src/assets/main.png';
+
 export default function Main() {
     return (
         <section id={classes.main}>
@@ -203,7 +205,7 @@ export default function Main() {
                                 </div>
                             </div>
 
-                            <img src="../src/assets/main.png" alt="" />
+                            <img src={mainImage} alt="" />
                         </div>
                         <div className={classes.col}>
                             <div
