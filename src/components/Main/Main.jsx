@@ -1,5 +1,4 @@
 import classes from './Main.module.css';
-import mainImage from 'assets/main.png';
 
 export default function Main() {
     return (
@@ -204,7 +203,7 @@ export default function Main() {
                                 </div>
                             </div>
 
-                            <img src={mainImage} alt="" />
+                            <img src="../src/assets/main.png" alt="" />
                         </div>
                         <div className={classes.col}>
                             <div
