@@ -203,7 +203,7 @@ export default function Main() {
                                 </div>
                             </div>
 
-                            <img src="src/assets/main.png" alt="" />
+                            <img src="./src/assets/main.png" alt="" />
                         </div>
                         <div className={classes.col}>
                             <div
