@@ -30,6 +30,7 @@ export default function Instructors() {
 
     return (
         <section id={classes.autopark}>
+            <h2 className={classes.pcNone}>Інструктори</h2>
             <div className={classes.owlCarousel}>
                 <div className={classes.owlItem}>
                     <div className={currentClass}>

@@ -10,6 +10,10 @@
     font-style: normal;
 }
 
+.pcNone {
+    display: none;
+}
+
 #autopark {
     height: 100vh;
     background: #292a2c;
@@ -209,4 +213,134 @@
     line-height: 22px;
     color: #ffffff;
     font-family: GilroyLight;
+}
+
+@media screen and (max-width: 900px) {
+    #autopark {
+        height: auto;
+        background: #292a2c;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .pcNone {
+        display: block;
+    }
+
+    .owlNav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        top: 100px;
+        left: 0px;
+    }
+
+    .owlNav .arrowL {
+        height: 10px;
+        content: url(/src/assets/arrow-w-l.svg);
+    }
+
+    .owlNav .arrowR {
+        transform: rotate(180deg);
+        margin-left: 20px;
+        content: url(/src/assets/arrow-w-l.svg);
+    }
+
+    #autopark h2 {
+        color: #ffffff;
+        font-family: Montserrat-Bold;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #autopark .page {
+        height: 100% !important;
+        width: 100% !important;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+    }
+
+    #autopark .page::before {
+        content: '';
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        filter: brightness(60%);
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #autopark .page .content {
+        height: auto;
+        width: 95%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #autopark .page .content .row {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #autopark .page .content .row .col {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #autopark .page .content .row .col:nth-child(2) {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .__btn {
+        font-size: 18px;
+        line-height: 20px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+        text-transform: none;
+    }
+
+    .__btn svg {
+        margin-top: 7px;
+        width: 60px;
+    }
+
+    #autopark p {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 40px 0;
+    }
 }
