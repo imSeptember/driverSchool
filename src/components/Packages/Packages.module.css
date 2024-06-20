@@ -163,3 +163,57 @@
     font-family: GilroyExtraBold;
     transform: rotate(-30deg);
 }
+
+@media screen and (max-width: 900px) {
+    #packages {
+        padding: 110px 0;
+    }
+
+    #packages h1 {
+        margin-bottom: 0;
+    }
+
+    .packagesRow {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: scenter;
+        align-items: center;
+    }
+    .packagesItem {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    #packages h2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    #packages h3 {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 9px 20px;
+        border-radius: 7px;
+    }
+
+    #packages p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 50px;
+    }
+
+    #packages .btn {
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 19px 50px;
+        border-radius: 50px;
+    }
+}
