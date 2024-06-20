@@ -3,6 +3,11 @@ import './Autopark.module.css';
 import { useState } from 'react';
 import { arrayWithNames } from '../../data/data';
 
+import item1 from '/src/assets/autopark-1.svg';
+import item2 from '/src/assets/autopark-2.svg';
+import item3 from '/src/assets/autopark-3.svg';
+import item4 from '/src/assets/autopark-4.svg';
+
 export default function Autopark() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -43,7 +48,7 @@ export default function Autopark() {
                                             <div
                                                 className={classes.bullet__item}
                                             >
-                                                <img src="src/assets/autopark-1.svg" />
+                                                <img src={item1} />
                                                 <p>
                                                     Заняття з нами -<br />
                                                     <span>
@@ -55,7 +60,7 @@ export default function Autopark() {
                                             <div
                                                 className={classes.bullet__item}
                                             >
-                                                <img src="src/assets/autopark-2.svg" />
+                                                <img src={item2} />
                                                 <p>
                                                     Мінімальна тривалість <br />
                                                     заняття
@@ -67,7 +72,7 @@ export default function Autopark() {
                                             <div
                                                 className={classes.bullet__item}
                                             >
-                                                <img src="src/assets/autopark-3.svg" />
+                                                <img src={item3} />
                                                 <p>
                                                     Тривалість максимально
                                                     продуктивного заняття
@@ -78,7 +83,7 @@ export default function Autopark() {
                                             <div
                                                 className={classes.bullet__item}
                                             >
-                                                <img src="src/assets/autopark-4.svg" />
+                                                <img src={item4} />
                                                 <p>
                                                     1 година АКПП =
                                                     <span>

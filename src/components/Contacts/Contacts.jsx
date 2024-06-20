@@ -1,6 +1,11 @@
 import classes from './Contacts.module.css';
 import { useState } from 'react';
 
+import facebook from '/src/assets/facebook.svg';
+import telegram from '/src/assets/telegram.svg';
+import instagram from '/src/assets/instagram.svg';
+import viber from '/src/assets/viber.svg';
+
 export default function Contacts() {
     const [placeholder, setPlaceholder] = useState('Номер телефону');
 
@@ -65,16 +70,16 @@ export default function Contacts() {
                 </div>
                 <div className={classes.socials}>
                     <a href="https://www.facebook.com/" target="_blank">
-                        <img src="src/assets/facebook.svg" alt="facebook" />
+                        <img src={facebook} alt="facebook" />
                     </a>
                     <a href="https://t.me/" target="_blank">
-                        <img src="src/assets/telegram.svg" alt="telegram" />
+                        <img src={telegram} alt="telegram" />
                     </a>
                     <a href="https://instagram.com/" target="_blank">
-                        <img src="src/assets/instagram.svg" alt="instagram" />
+                        <img src={instagram} alt="instagram" />
                     </a>
                     <a href="viber://chat?number=%2B380675012195">
-                        <img src="src/assets/viber.svg" alt="viber" />
+                        <img src={viber} alt="viber" />
                     </a>
                 </div>
             </div>
