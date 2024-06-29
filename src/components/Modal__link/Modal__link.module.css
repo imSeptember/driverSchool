@@ -1,0 +1,126 @@
+@keyframes slideInUp {
+    0% {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./src/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./src/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('./src/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #292a2c;
+    z-index: 10000;
+    text-align: center;
+    visibility: hidden;
+    animation: slideInUp 0.3s forwards;
+}
+
+.close {
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+}
+
+.popup .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.close svg,
+.close img {
+    height: 100%;
+    width: auto;
+}
+
+.popup .wrapper {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.popup .wrapper .content {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 20px 0;
+    color: #fe6309;
+    font-family: Montserrat-Regular;
+    transition: 0.3s ease;
+}
+
+a span {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Montserrat-ExtraBoldItalic;
+}
+
+@media screen and (max-width: 1601px) {
+    a {
+        font-size: 16px;
+        line-height: 28px;
+        margin: 17px 0;
+    }
+}

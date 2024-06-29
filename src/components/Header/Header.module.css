@@ -1,6 +1,8 @@
 header {
     height: 70px;
     background: #fe6309;
+    z-index: 103;
+    position: relative;
 }
 
 .wrapper {

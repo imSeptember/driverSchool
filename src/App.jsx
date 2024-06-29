@@ -8,6 +8,7 @@ import Main from './components/Main/Main';
 import Packages from './components/Packages/Packages';
 import PriceList from './components/PriceList/PriceList';
 import ModalPhone from './components/Modal__phone/Modal__phone';
+import ModalLink from './components/Modal__link/Modal__link';
 import { PopupProvider } from './components/PopupContext/PopupContext';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <>
             <PopupProvider>
                 <ModalPhone></ModalPhone>
+                <ModalLink></ModalLink>
                 <Header></Header>
                 <Main></Main>
                 <Autopark></Autopark>

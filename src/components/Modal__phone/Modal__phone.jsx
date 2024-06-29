@@ -2,6 +2,11 @@ import { useState } from 'react';
 import { usePopup } from '../PopupContext/PopupContext';
 import classes from './Modal__phone.module.css';
 
+import facebook from '/src/assets/facebook.svg';
+import telegram from '/src/assets/telegram.svg';
+import instagram from '/src/assets/instagram.svg';
+import viber from '/src/assets/viber.svg';
+
 export default function ModalPhone() {
     const { isPopupVisible, closePopup } = usePopup();
     const [placeholder, setPlaceholder] = useState('Ваш номер телефону');
@@ -71,7 +76,7 @@ export default function ModalPhone() {
                         <button type="submit">Відправити</button>
                         <div className={classes.errorMsg}></div>
                     </form>
-                    <h2>або зв'язатися іншим зручним для вас способом</h2>
+                    <h2>або зв&lsquo;язатися іншим зручним для вас способом</h2>
 
                     <div className={classes.socials}>
                         <a
@@ -79,14 +84,14 @@ export default function ModalPhone() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src="src/assets/facebook.svg" alt="facebook" />
+                            <img src={facebook} alt="facebook" />
                         </a>
                         <a
                             href="https://t.me/MrDriveDrivingSchool"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src="src/assets/telegram.svg" alt="telegram" />
+                            <img src={telegram} alt="telegram" />
                         </a>
                         <a
                             href="https://instagram.com/mr.drive_school?igshid=17xepd9mbd8um"
@@ -95,11 +100,11 @@ export default function ModalPhone() {
                         >
                             <img
                                 src="src/assets/instagram.svg"
-                                alt="instagram"
+                                alt={instagram}
                             />
                         </a>
                         <a href="viber://chat?number=%2B380671050003">
-                            <img src="src/assets/viber.svg" alt="viber" />
+                            <img src={viber} alt="viber" />
                         </a>
                     </div>
                 </div>

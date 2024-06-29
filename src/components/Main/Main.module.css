@@ -35,6 +35,10 @@
 #main {
     height: 100vh;
     background: #fe6309;
+
+    /* height: auto;
+    text-align: center;
+    padding-top: 130px; */
 }
 
 .wrapper {
@@ -63,7 +67,6 @@
     align-items: flex-end;
     justify-content: center;
     flex-grow: 1;
-    background: rgba(255, 0, 0, 0);
     background: linear-gradient(
         180deg,
         rgba(255, 0, 0, 0) 0%,
@@ -97,6 +100,7 @@
 .col:nth-child(2n) {
     justify-content: flex-end;
     margin: 0 50px;
+    margin-top: -120px;
 }
 
 .col img {

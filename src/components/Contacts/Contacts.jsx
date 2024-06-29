@@ -52,8 +52,8 @@ export default function Contacts() {
                                 href="https://goo.gl/maps/sx2Q3WFEfZgmqZv9A"
                                 target="_blank"
                             >
-                                Вул.Вікентія Хвойки,, 15/15/6, <br />
-                                Київ, 04080
+                                Вул. Сортувальна, 20, <br />
+                                Київ, 02000
                             </a>
                         </p>
                         <p>
@@ -62,8 +62,8 @@ export default function Contacts() {
                         </p>
                         <p>
                             <a href="tel:+380671050003">+38 (067) 501-21-95</a>
-                            <a href="mailto:mrdrive.com.ua@gmail.com">
-                                kalenskiyAlex@gmail.com
+                            <a href="mailto:777drivingschool777@gmail.com">
+                                777drivingschool777@gmail.com
                             </a>
                         </p>
                     </div>

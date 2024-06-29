@@ -6,7 +6,8 @@ import logo from '/src/assets/logo.svg';
 import burger from '/src/assets/burger.svg';
 
 export default function Header() {
-    const { openPopup } = usePopup();
+    const { openPopup, openNav } = usePopup();
+
     return (
         <header>
             <div className={classes.wrapper}>
@@ -17,7 +18,7 @@ export default function Header() {
                     <a href="">
                         <img src={logo} alt="" />
                     </a>
-                    <a href="">
+                    <a id="open-nav" className="side" onClick={openNav}>
                         <img src={burger} alt="" />
                     </a>
                 </div>
