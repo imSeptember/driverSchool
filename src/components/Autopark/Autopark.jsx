@@ -34,7 +34,7 @@ export default function Autopark() {
     const currentClass = `${classes.page} ${classes[`page__${currentIndex}`]}`;
 
     return (
-        <section id={classes.autopark}>
+        <section id="autopark" className={classes.autopark}>
             <h1 className={classes.pcNone}>Наш автопарк</h1>
             <div className={classes.owlCarousel}>
                 <div className={classes.owlItem}>

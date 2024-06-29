@@ -14,7 +14,7 @@
     display: none;
 }
 
-#autopark {
+.autopark {
     height: 100vh;
     background: #292a2c;
     color: #ffffff;
@@ -107,7 +107,7 @@
     justify-content: space-between;
 }
 
-#autopark p {
+.autopark p {
     font-size: 14px;
     line-height: 18px;
     font-family: GilroyLight;
@@ -167,7 +167,7 @@
     transform: rotate(90deg);
 }
 
-#autopark .title {
+.autopark .title {
     font-size: 65px;
     margin-bottom: 80px;
     color: transparent;
@@ -208,7 +208,7 @@
     content: url(/src/assets/arrow-circle-w-l.svg);
 }
 
-#autopark p {
+.autopark p {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
@@ -216,7 +216,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    #autopark {
+    .autopark {
         height: auto;
         background: #292a2c;
         text-align: center;
@@ -253,7 +253,7 @@
         content: url(/src/assets/arrow-w-l.svg);
     }
 
-    #autopark h2 {
+    .autopark h2 {
         color: #ffffff;
         font-family: Montserrat-Bold;
         font-size: 40px;
@@ -263,7 +263,7 @@
         justify-content: center;
     }
 
-    #autopark .page {
+    .autopark .page {
         height: 100% !important;
         width: 100% !important;
         display: flex;
@@ -275,7 +275,7 @@
         position: relative;
     }
 
-    #autopark .page::before {
+    .autopark .page::before {
         content: '';
         position: static;
         top: 0;
@@ -289,7 +289,7 @@
         background-size: cover;
     }
 
-    #autopark .page .content {
+    .autopark .page .content {
         height: auto;
         width: 95%;
         display: flex;
@@ -298,7 +298,7 @@
         justify-content: center;
     }
 
-    #autopark .page .content .row {
+    .autopark .page .content .row {
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -307,7 +307,7 @@
         align-items: center;
     }
 
-    #autopark .page .content .row .col {
+    .autopark .page .content .row .col {
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -315,7 +315,7 @@
         justify-content: center;
     }
 
-    #autopark .page .content .row .col:nth-child(2) {
+    .autopark .page .content .row .col:nth-child(2) {
         align-items: center;
         justify-content: center;
     }
@@ -338,7 +338,7 @@
         width: 60px;
     }
 
-    #autopark p {
+    .autopark p {
         font-size: 20px;
         line-height: 32px;
         margin: 40px 0;

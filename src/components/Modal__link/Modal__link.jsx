@@ -42,31 +42,31 @@ export default function ModalLink() {
 
             <div className={classes.wrapper}>
                 <div className={classes.content}>
-                    <a href="#autopark">
+                    <a href="#autopark" onClick={closeNav}>
                         01
                         <br />
                         <span>вибрати автомобіль</span>
                     </a>
 
-                    <a href="#packages">
+                    <a href="#packages" onClick={closeNav}>
                         02
                         <br />
                         <span>вибрати програму навчання</span>
                     </a>
 
-                    <a href="#instructors">
+                    <a href="#instructors" onClick={closeNav}>
                         03
                         <br />
                         <span>вибрати інструктора</span>
                     </a>
 
-                    <a href="#extras">
+                    <a href="#extras" onClick={closeNav}>
                         04
                         <br />
                         <span>додаткові послуги</span>
                     </a>
 
-                    <a href="#contacts">
+                    <a href="#contacts" onClick={closeNav}>
                         05
                         <br />
                         <span>Як з нами зв&quot;язатися</span>

@@ -2,7 +2,7 @@ import classes from './Courses.module.css';
 
 export default function Courses() {
     return (
-        <section id={classes.packages}>
+        <section id="extras" className={classes.packages}>
             <div className={classes.wrapper}>
                 <div className={classes.content}>
                     <h1>Курси підвищення кваліфікації</h1>

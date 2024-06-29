@@ -18,7 +18,7 @@ export default function Contacts() {
     };
 
     return (
-        <section id={classes.contacts}>
+        <section id="contacts" className={classes.contacts}>
             <div className={classes.wrapper}>
                 <div className={classes.content}>
                     <div className={classes.col}>

@@ -2,7 +2,7 @@ import classes from './Packages.module.css';
 
 export default function Packages() {
     return (
-        <section id={classes.packages}>
+        <section id="packages" className={classes.packages}>
             <div className={classes.wrapper}>
                 <div className={classes.content}>
                     <h1>

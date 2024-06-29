@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-#autopark {
+.autopark {
     height: 100vh;
     background: #292a2c;
     color: #ffffff;
@@ -129,7 +129,7 @@
     width: auto;
 }
 
-#autopark p {
+.autopark p {
     font-size: 14px;
     line-height: 18px;
     font-family: GilroyLight;
@@ -183,7 +183,7 @@
     transform: rotate(90deg);
 }
 
-#autopark .title {
+.autopark .title {
     font-size: 80px;
     line-height: 80px;
     color: transparent;
@@ -303,7 +303,7 @@
         width: 60px;
     }
 
-    #autopark .title {
+    .autopark .title {
         font-size: 35px;
         line-height: 40px;
         text-align: left;
@@ -338,7 +338,7 @@
         width: auto;
         margin-right: 0;
     }
-    #autopark p {
+    .autopark p {
         font-size: 18px;
         line-height: 23px;
     }
@@ -348,7 +348,7 @@
         margin-top: -50px;
     }
 
-    #autopark h1 {
+    .autopark h1 {
         width: 100%;
         font-size: 40px;
         justify-content: center;
@@ -387,7 +387,7 @@
         content: url(/src/assets/arrow-w-l.svg);
     }
 
-    #autopark {
+    .autopark {
         height: auto;
         text-align: center;
     }

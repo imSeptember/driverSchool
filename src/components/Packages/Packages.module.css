@@ -35,13 +35,13 @@
     font-style: normal;
 }
 
-#packages {
+.packages {
     padding: 65px 0;
     background-image: url(/src/assets/texture.png);
     text-align: center;
 }
 
-#packages h1 {
+.packages h1 {
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 40px;
@@ -49,7 +49,7 @@
     font-family: Montserrat-ExtraBold;
 }
 
-#packages h1 span {
+.packages h1 span {
     color: #fe6309;
 }
 
@@ -87,7 +87,7 @@
     padding: 15px 0;
 }
 
-#packages h2 {
+.packages h2 {
     font-size: 55px;
     line-height: 70px;
     -webkit-text-stroke-width: 1px;
@@ -97,7 +97,7 @@
     font-family: Montserrat-ExtraBoldItalic;
 }
 
-#packages h3 {
+.packages h3 {
     font-size: 16px;
     line-height: 19px;
     padding: 9px 20px;
@@ -107,11 +107,11 @@
     background: #ffffff;
 }
 
-#packages h3 span {
+.packages h3 span {
     color: #ff2121;
 }
 
-#packages p {
+.packages p {
     font-size: 14px;
     line-height: 20px;
     margin-top: 30px;
@@ -119,7 +119,7 @@
     font-family: Montserrat-Light;
 }
 
-#packages p span {
+.packages p span {
     color: #fe6309;
 }
 
@@ -127,7 +127,7 @@
     margin-top: auto;
 }
 
-#packages .btn {
+.packages .btn {
     margin-top: 50px;
 }
 
@@ -165,11 +165,11 @@
 }
 
 @media screen and (max-width: 900px) {
-    #packages {
+    .packages {
         padding: 110px 0;
     }
 
-    #packages h1 {
+    .packages h1 {
         margin-bottom: 0;
     }
 
@@ -191,25 +191,25 @@
         padding: 50px 0;
     }
 
-    #packages h2 {
+    .packages h2 {
         font-size: 70px;
         line-height: 80px;
     }
 
-    #packages h3 {
+    .packages h3 {
         font-size: 18px;
         line-height: 22px;
         padding: 9px 20px;
         border-radius: 7px;
     }
 
-    #packages p {
+    .packages p {
         font-size: 16px;
         line-height: 25px;
         margin-top: 50px;
     }
 
-    #packages .btn {
+    .packages .btn {
         margin-top: 50px;
         font-size: 20px;
         line-height: 24px;

@@ -29,7 +29,7 @@ export default function Instructors() {
     const currentClass = `${classes.page} ${classes[`page__${currentIndex}`]}`;
 
     return (
-        <section id={classes.autopark}>
+        <section id="instructors" className={classes.autopark}>
             <h2 className={classes.pcNone}>Інструктори</h2>
             <div className={classes.owlCarousel}>
                 <div className={classes.owlItem}>
