@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { usePopup } from '../PopupContext/PopupContext';
+import { usePopup } from '../Context/PopupContext';
+import { useEmail } from '../Context/EmailContext';
 import classes from './Modal__phone.module.css';
 
 import facebook from '/src/assets/facebook.svg';
@@ -8,8 +9,18 @@ import instagram from '/src/assets/instagram.svg';
 import viber from '/src/assets/viber.svg';
 
 export default function ModalPhone() {
+    // Email.send({
+    //     SecureToken: 'eba1892b-db0a-44c7-973d-e2697483718f',
+    //     To: '777drivingschool777@gmail.com',
+    //     From: '777drivingschool777@gmail.com',
+    //     Subject: 'This is the subject',
+    //     Body: 'And this is the body',
+    // }).then((message) => alert(message));
+
     const { isPopupVisible, closePopup } = usePopup();
     const [placeholder, setPlaceholder] = useState('Ваш номер телефону');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const { setIsEmailSent } = useEmail(); // Get setIsEmailSent from context
 
     const handleMouseEnter = () => {
         setPlaceholder('+38 (___) ___-____');
@@ -17,6 +28,29 @@ export default function ModalPhone() {
 
     const handleMouseLeave = () => {
         setPlaceholder('Ваш номер телефону');
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Example using EmailJS for sending email
+        Email.send({
+            SecureToken: 'eba1892b-db0a-44c7-973d-e2697483718f',
+            To: '777drivingschool777@gmail.com',
+            From: '777drivingschool777@gmail.com',
+            Subject: 'Новый Клиент',
+            Body: `Телефонный номер: ${phoneNumber}`,
+        })
+            .then((response) => {
+                console.log('Email sent!', response.status, response.text);
+                setIsEmailSent(true);
+                closePopup();
+            })
+
+            .catch((error) => {
+                console.error('Email could not be sent:', error);
+                // Handle error, e.g., show error message
+            });
     };
 
     if (!isPopupVisible) return null; // Hide popup if not visible
@@ -60,19 +94,17 @@ export default function ModalPhone() {
                     <h1>
                         Замовити <span>зворотний дзвінок</span>
                     </h1>
-                    <form action="/send.php" method="post">
-                        <input name="type" type="hidden" value="callback" />
-
+                    <form onSubmit={handleSubmit}>
                         <input
+                            required
                             name="phone"
                             type="text"
                             placeholder={placeholder}
-                            data-phone-mask=""
-                            data-im-insert="true"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
+                            value={phoneNumber}
+                            onChange={(e) => setPhoneNumber(e.target.value)}
                         />
-
                         <button type="submit">Відправити</button>
                         <div className={classes.errorMsg}></div>
                     </form>

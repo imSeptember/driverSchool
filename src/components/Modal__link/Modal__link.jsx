@@ -1,4 +1,4 @@
-import { usePopup } from '../PopupContext/PopupContext';
+import { usePopup } from '../Context/PopupContext';
 import classes from './Modal__link.module.css';
 
 export default function ModalLink() {
@@ -69,7 +69,7 @@ export default function ModalLink() {
                     <a href="#contacts">
                         05
                         <br />
-                        <span>Як з нами зв'язатися</span>
+                        <span>Як з нами зв&quot;язатися</span>
                     </a>
                 </div>
             </div>

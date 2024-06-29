@@ -1,5 +1,5 @@
 import classes from './Header.module.css';
-import { usePopup } from '../PopupContext/PopupContext';
+import { usePopup } from '../Context/PopupContext';
 
 import phone from '/src/assets/phone.svg';
 import logo from '/src/assets/logo.svg';

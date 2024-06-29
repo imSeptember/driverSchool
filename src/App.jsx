@@ -9,22 +9,27 @@ import Packages from './components/Packages/Packages';
 import PriceList from './components/PriceList/PriceList';
 import ModalPhone from './components/Modal__phone/Modal__phone';
 import ModalLink from './components/Modal__link/Modal__link';
-import { PopupProvider } from './components/PopupContext/PopupContext';
+import { PopupProvider } from './components/Context/PopupContext';
+import Thanks from './components/Thanks/Thanks';
+import { EmailProvider } from './components/Context/EmailContext';
 
 export default function App() {
     return (
         <>
             <PopupProvider>
-                <ModalPhone></ModalPhone>
-                <ModalLink></ModalLink>
-                <Header></Header>
-                <Main></Main>
-                <Autopark></Autopark>
-                <Packages></Packages>
-                <PriceList></PriceList>
-                <Courses></Courses>
-                <Instructors></Instructors>
-                <Contacts></Contacts>
+                <EmailProvider>
+                    <Thanks></Thanks>
+                    <ModalPhone></ModalPhone>
+                    <ModalLink></ModalLink>
+                    <Header></Header>
+                    <Main></Main>
+                    <Autopark></Autopark>
+                    <Packages></Packages>
+                    <PriceList></PriceList>
+                    <Courses></Courses>
+                    <Instructors></Instructors>
+                    <Contacts></Contacts>
+                </EmailProvider>
             </PopupProvider>
         </>
     );
