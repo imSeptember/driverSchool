@@ -98,10 +98,7 @@ export default function ModalPhone() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img
-                                src="src/assets/instagram.svg"
-                                alt={instagram}
-                            />
+                            <img src={instagram} alt="instagram" />
                         </a>
                         <a href="viber://chat?number=%2B380671050003">
                             <img src={viber} alt="viber" />
