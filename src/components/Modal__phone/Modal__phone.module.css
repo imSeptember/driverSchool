@@ -204,6 +204,10 @@ input {
         width: auto;
     }
 
+    .popup form {
+        width: 100%;
+    }
+
     .popup form input[type='text'] {
         font-size: 25px;
         line-height: 30px;
